@@ -16,6 +16,10 @@
 		A16F4D88278F202B00098E82 /* MiniBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F4D87278F202B00098E82 /* MiniBusTests.swift */; };
 		A16F4D92278F202B00098E82 /* MiniBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F4D91278F202B00098E82 /* MiniBusUITests.swift */; };
 		A16F4D94278F202B00098E82 /* MiniBusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F4D93278F202B00098E82 /* MiniBusUITestsLaunchTests.swift */; };
+		A1BC861A2791521200592F29 /* MiniBus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1BC86182791521200592F29 /* MiniBus.xcdatamodeld */; };
+		A1BC861D2791530400592F29 /* Device+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC861B2791530400592F29 /* Device+CoreDataClass.swift */; };
+		A1BC861E2791530400592F29 /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC861C2791530400592F29 /* Device+CoreDataProperties.swift */; };
+		A1BC862027915FBC00592F29 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC861F27915FBC00592F29 /* DeviceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		A16F4D8D278F202B00098E82 /* MiniBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16F4D91278F202B00098E82 /* MiniBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBusUITests.swift; sourceTree = "<group>"; };
 		A16F4D93278F202B00098E82 /* MiniBusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1BC86192791521200592F29 /* MiniBus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniBus.xcdatamodel; sourceTree = "<group>"; };
+		A1BC861B2791530400592F29 /* Device+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A1BC861C2791530400592F29 /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A1BC861F27915FBC00592F29 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 		A16F4D64278F202900098E82 = {
 			isa = PBXGroup;
 			children = (
+				A1BC861B2791530400592F29 /* Device+CoreDataClass.swift */,
+				A1BC861C2791530400592F29 /* Device+CoreDataProperties.swift */,
 				A16F4D6F278F202900098E82 /* MiniBus */,
 				A16F4D86278F202B00098E82 /* MiniBusTests */,
 				A16F4D90278F202B00098E82 /* MiniBusUITests */,
@@ -106,6 +116,8 @@
 				A16F4D79278F202A00098E82 /* Assets.xcassets */,
 				A16F4D7B278F202A00098E82 /* LaunchScreen.storyboard */,
 				A16F4D7E278F202A00098E82 /* Info.plist */,
+				A1BC86182791521200592F29 /* MiniBus.xcdatamodeld */,
+				A1BC861F27915FBC00592F29 /* DeviceViewController.swift */,
 			);
 			path = MiniBus;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16F4D75278F202900098E82 /* ViewController.swift in Sources */,
+				A1BC862027915FBC00592F29 /* DeviceViewController.swift in Sources */,
+				A1BC861E2791530400592F29 /* Device+CoreDataProperties.swift in Sources */,
 				A16F4D71278F202900098E82 /* AppDelegate.swift in Sources */,
 				A16F4D73278F202900098E82 /* SceneDelegate.swift in Sources */,
+				A1BC861A2791521200592F29 /* MiniBus.xcdatamodeld in Sources */,
+				A1BC861D2791530400592F29 /* Device+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +614,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1BC86182791521200592F29 /* MiniBus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1BC86192791521200592F29 /* MiniBus.xcdatamodel */,
+			);
+			currentVersion = A1BC86192791521200592F29 /* MiniBus.xcdatamodel */;
+			path = MiniBus.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A16F4D65278F202900098E82 /* Project object */;
 }
