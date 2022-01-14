@@ -20,6 +20,7 @@
 		A1BC861D2791530400592F29 /* Device+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC861B2791530400592F29 /* Device+CoreDataClass.swift */; };
 		A1BC861E2791530400592F29 /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC861C2791530400592F29 /* Device+CoreDataProperties.swift */; };
 		A1BC862027915FBC00592F29 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC861F27915FBC00592F29 /* DeviceViewController.swift */; };
+		A1BC8622279161B200592F29 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC8621279161B200592F29 /* AddEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A1BC861B2791530400592F29 /* Device+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A1BC861C2791530400592F29 /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A1BC861F27915FBC00592F29 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		A1BC8621279161B200592F29 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				A16F4D7E278F202A00098E82 /* Info.plist */,
 				A1BC86182791521200592F29 /* MiniBus.xcdatamodeld */,
 				A1BC861F27915FBC00592F29 /* DeviceViewController.swift */,
+				A1BC8621279161B200592F29 /* AddEditViewController.swift */,
 			);
 			path = MiniBus;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				A1BC862027915FBC00592F29 /* DeviceViewController.swift in Sources */,
 				A1BC861E2791530400592F29 /* Device+CoreDataProperties.swift in Sources */,
 				A16F4D71278F202900098E82 /* AppDelegate.swift in Sources */,
+				A1BC8622279161B200592F29 /* AddEditViewController.swift in Sources */,
 				A16F4D73278F202900098E82 /* SceneDelegate.swift in Sources */,
 				A1BC861A2791521200592F29 /* MiniBus.xcdatamodeld in Sources */,
 				A1BC861D2791530400592F29 /* Device+CoreDataClass.swift in Sources */,
