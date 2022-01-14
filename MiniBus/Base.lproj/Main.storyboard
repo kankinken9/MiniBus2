@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K8p-Iz-ILa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LJU-UB-DjD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -30,9 +30,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="list"/>
-                                <connections>
-                                    <segue destination="LJU-UB-DjD" kind="presentation" id="cJi-75-G8z"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVd-CB-foN">
                                 <rect key="frame" x="136" y="364" width="155" height="101"/>
@@ -74,7 +71,7 @@
             <objects>
                 <tableViewController id="eRL-Aa-RPw" customClass="DeviceViewController" customModule="MiniBus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Zek-jf-azg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -157,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="83.705357142857139"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Edit View Controller-->
         <scene sceneID="yka-aj-JmF">
             <objects>
-                <tableViewController id="tfy-hs-je6" sceneMemberID="viewController">
+                <tableViewController id="tfy-hs-je6" customClass="AddEditViewController" customModule="MiniBus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1A7-9f-neg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,11 +222,25 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="v0s-uF-OS4">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="mxq-vr-GS0"/>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="MoW-Rl-p6C"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="mxq-vr-GS0">
+                            <connections>
+                                <segue destination="Cg6-tT-wp4" kind="unwind" unwindAction="cancelWithSegue:" id="C6g-A1-QkD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="MoW-Rl-p6C">
+                            <connections>
+                                <segue destination="Cg6-tT-wp4" kind="unwind" unwindAction="saveWithSegue:" id="PRK-7S-jA7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="companyTF" destination="Z5w-vN-fNs" id="qem-1d-Gnc"/>
+                        <outlet property="nameTF" destination="H4i-IZ-VmY" id="Lcf-UV-Kgg"/>
+                        <outlet property="versionTF" destination="Ytb-Db-GkT" id="nb1-n0-W9y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fb0-uT-DGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Cg6-tT-wp4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5173.913043478261" y="-19.419642857142858"/>
         </scene>
@@ -256,8 +267,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJU-UB-DjD" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cEW-cZ-Wgj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b5g-Ne-wsQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

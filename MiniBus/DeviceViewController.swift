@@ -1,8 +1,8 @@
 //
 //  DeviceViewController.swift
-//  Lab07
+//  MiniBus
 //
-//  Created by kenkan on 30/11/2021.
+//  Created by kenkan on 12/1/2022.
 //
 
 import UIKit
